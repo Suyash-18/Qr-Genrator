@@ -7,7 +7,11 @@ body{
     height: 100%;
     width: 100%;
     background: linear-gradient(to bottom left, rgba(2, 72, 142, 0.586), rgba(142, 2, 53, 0.592));
-
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center ;
+    overflow-y: scroll;
 }
 
 .main{

@@ -22,8 +22,12 @@ btn.addEventListener("click",() => {
 });
 
 download.addEventListener("click", async () => {
-    await fetch(img.src);
-    html2pdf().from(image).save();
+    const responce =await fetch(img.src);
+    const blob = await responce.blob();
+    const dl = document.createElement("a");
+    dl.href = URL.createObjectURL(blob);
+    dl.download = `qr.jpeg`;
+    dl.click();
 });
 
 function getQr() {
