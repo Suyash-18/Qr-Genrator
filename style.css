@@ -11,7 +11,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center ;
-    overflow-y: scroll;
+    overflow: hidden;
 }
 
 .main{
@@ -28,9 +28,10 @@ body{
     padding: 5px;
     position: absolute;
     top: 10rem;
+    padding: 2rem;
     border-radius: 12px;
     background: linear-gradient(145deg, #cacaca, #f0f0f0);
-    box-shadow:  10px 10px 17px #d0d0d0,
+    box-shadow:  10px 10px 17px #505050,
              -10px -10px 17px #f0f0f0 inset;
     text-align: center;
 
@@ -89,7 +90,20 @@ body{
 
 .des{
     font-family: 'Raleway', sans-serif;
-    width: 85%;
     padding: 2px;
+    max-width: 200px;
+    overflow: hidden;
     font-weight: 700;
+}
+
+@media (max-width: 1250px) {
+   .main{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+   }
+    .container{
+    width: 220px;
+    position: relative;
+   }
 }

@@ -34,6 +34,7 @@ function getQr() {
     let inputToQr = input.value;
     if (inputToQr == '') {
         alert("Enter text First..")
+        return;
     }
     image.innerHTML = '';
     qrLink = qrLink + inputToQr;
@@ -50,3 +51,16 @@ function getQr() {
     qrLink = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="
 }
 
+// let qrLink = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=suyash"
+
+// fetch(qrLink)
+// .then((res) => {
+//     console.log(res);
+//     return res.json()
+// })
+// .then((data) =>{
+//     console.log(data);
+// })
+// .catch((er) =>{
+//     console.log(er);
+// })
